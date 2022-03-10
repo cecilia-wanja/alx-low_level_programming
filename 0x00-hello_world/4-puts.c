@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
-* prints out and returns 0 if successful
+* Description: prints out and returns 0 if successful
 */
 int main(void)
 {
