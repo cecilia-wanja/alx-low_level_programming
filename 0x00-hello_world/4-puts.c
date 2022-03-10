@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
 * Description: prints out and returns 0 if successful
 */
 int main(void)
