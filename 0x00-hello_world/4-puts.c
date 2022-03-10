@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
-* Description: prints out and returns 0 if successful
-*/
+ * main - main block
+ * Return: 0
+ */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
