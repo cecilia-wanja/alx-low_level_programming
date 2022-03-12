@@ -8,43 +8,30 @@
  */
 int main(void)
 {
-int c;
-int d;
-int e;
-int f = 0;
+	int n1 = 48;
+	int a = 0;
+	int b;
+	int com = 44;
 
-while (f < 10)
-{
-	e = 0;
-	while (e < 10)
+	while (a <= 99)
 	{
-		d = 0;
-		while (d < 10)
+		b = a + 1;
+		while (b <= 99)
 		{
-			c = 0;
-			while (c < 10)
+			putchar((a / 10) + n1);
+			putchar((a % 10) + n1);
+			putchar(32);
+			putchar((b / 10) + n1);
+			putchar((b % 10) + n1);
+			if (a != 98 || b != 99)
 			{
-				if (!(f == c && e == d))
-				{
-					putchar('0' + f);
-					putchar('0' + e);
-					putchar(' ');
-					putchar('0' + d);
-					putchar('0' + c);
-					if (!(f + e == 18 && c + d == 17 && d == 9))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-				c++;
+				putchar(com);
+				putchar(32);
 			}
-			d++;
+			b += 1;
 		}
-		e++;
+		a += 1;
 	}
-	f++;
-}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
