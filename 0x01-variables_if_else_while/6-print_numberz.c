@@ -1,20 +1,22 @@
 #include <stdio.h>
-
 /**
- * main - program that prints all single digit numbers of base 10 starting from
- * You are not allowed to use any variable of type char
- * You can only use the putchar function
+ * main - main block
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
  * Return: 0
  */
-
 int main(void)
 {
-int n = 48;
-while (n <= 57)
-{
-putchar(n);
-n += 1;
+	int c = 0;
+
+	while (c < 10)
+	{
+		putchar(48 + c);
+		c++;
+	}
+
+	putchar('\n');
+	return (0);
 }
-printf("\n");
-return (0);
-}
+© 2022 GitHub, Inc.
+
