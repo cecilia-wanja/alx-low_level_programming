@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_rev - prints a string
- * @str: pointer to the string to print
+ * @s: pointer to the string to print
  * Return: void
 */
 
