@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+* void _puts - prints a string
+* @str: The character to print
+* 
+* Return: Always 0
+*/
+
 void _puts(char *str)
 {
 int i = 0;
