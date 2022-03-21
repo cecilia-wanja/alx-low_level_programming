@@ -2,9 +2,8 @@
 #include <stdio.h>
 
 /**
-* void _puts - prints a string
-* @str: The character to print
-* 
+* _puts - prints a string
+* @str: The character to print 
 * Return: Always 0
 */
 
