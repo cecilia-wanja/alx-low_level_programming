@@ -3,7 +3,7 @@
 
 /**
  * puts2 - prints reversed string
- * @s: pointer to the string to print
+ * @str: pointer to the string to print
  * Return: void
 */
 
