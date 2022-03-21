@@ -3,8 +3,8 @@
 
 /**
 * _puts - prints a string
-* @str: The character to print 
-* Return: Always 0
+*@str: The character to print 
+*Return: Always 0
 */
 
 void _puts(char *str)
