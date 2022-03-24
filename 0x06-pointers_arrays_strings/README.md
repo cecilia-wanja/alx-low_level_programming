@@ -1,4 +1,4 @@
-#0x06-pointers_arrays_strings
+# 0x06-pointers_arrays_strings
 1. Write a function that concatenates two strings.
 
 Prototype: char *_strcat(char *dest, char *src);
