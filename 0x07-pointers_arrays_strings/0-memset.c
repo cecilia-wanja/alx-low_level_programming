@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - copies memory area
+ * _memset - fills memory with a constant byte
  *
  * @s: Pointer to a character param
  *
