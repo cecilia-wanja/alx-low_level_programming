@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
-* @j: input
-* @i: input
+* is_square_root - returns the square root
+* @j: input value
+* @i: input value
 * Return: input value
 */
 
