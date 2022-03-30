@@ -2,9 +2,9 @@
 
 /**
  * is_prime - find a prime number
- * @i: input int
- * @j: input int
- * Return: boolean val of the state of inputs
+ * @i: input value
+ * @j: input value
+ * Return: boolean value
  */
 
 int is_prime(int i, int j)
@@ -21,7 +21,7 @@ int is_prime(int i, int j)
 }
 
 /**
-* is_prime_number - returns 1 if the input integer is a prime number, otherwise return 0
+* is_prime_number - returns 1 if the input integer is a prime number, otherwise 0
 * @n: input
 * Return: 1 if integer, otherwise 0
 */
