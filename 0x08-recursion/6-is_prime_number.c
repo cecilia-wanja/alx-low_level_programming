@@ -21,7 +21,7 @@ int is_prime(int i, int j)
 }
 
 /**
-* is_prime_number - returns 1 if the input integer is a prime number, otherwise 0
+* is_prime_number - returns 1 if prime number, otherwise 0
 * @n: input
 * Return: 1 if integer, otherwise 0
 */
