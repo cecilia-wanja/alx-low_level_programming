@@ -4,10 +4,16 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-typedef struct printer{
-char *symbol;
-void (*print)(va_list arg);
-} printer_t;
+/**
+* struct fmt - Struct format
+* @f: type format
+* @p: print function
+*/
+typedef struct fmt
+{
+	char *f;
+	void (*p)(va_list s);
+} my_fmt;
 
 
 int sum_them_all(const unsigned int n, ...);
