@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
 *free_listint2 - frees memory from a linked list
@@ -8,19 +9,14 @@
 
 void free_listint2(listint_t **head)
 {
-listint_t *i;
-listint_t **j = head;
+	listint_t *i;
 
-if (j != NULL)
-{
-while (*head != NULL)
-{
-i = *head;
-free(i);
-*head = (*head)->next;
-}
-
-*j = NULL;
-
-}
+	if (head == NULL)
+		return;
+	while (*head != NULL)
+	{
+		i = (*head)->next;
+		free(*head);
+		*head = i;
+	}
 }
