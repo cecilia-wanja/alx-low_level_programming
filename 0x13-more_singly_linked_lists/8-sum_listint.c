@@ -15,7 +15,7 @@ size_t sum = 0;
 while (i != NULL)
 {
 sum += i->n;
-cursor = i->next;
+i = i->next;
 }
 return (sum);
 }
