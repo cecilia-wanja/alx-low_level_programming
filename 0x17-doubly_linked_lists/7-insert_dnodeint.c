@@ -1,40 +1,43 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
 /**
- * *insert_dnodeint_at_index - inserts new node at given position.
- * @h: pointer to first element.
- * @idx: index where new node should be added.
- * @n: data to be added.
- * Return: address of new node or NULL if it failed.
+ * insert_dnodeint_at_index - insert a node at @idx
+ * @h: the list to insert the node
+ * @idx: the index
+ * @n: number to add in the new node
+ * Return: the node
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *newnode, *temp;
-	unsigned int counter;
+	dlistint_t *actual;
+	dlistint_t *new;
+	size_t size;
 
-	newnode = malloc(sizeof(dlistint_t));
-	if (newnode == NULL)
+
+	actual = *h;
+	size = 0;
+	if (h == NULL)
 		return (NULL);
-	newnode->n = n;
-	newnode->next = NULL;
-	newnode->prev = NULL;
 	if (idx == 0)
+		return (add_dnodeint(h, n));
+	while (actual != NULL)
 	{
-		*h = newnode;
-		return (newnode);
+		size++;
+		actual = actual->next;
 	}
-	temp = *h;
-	for (counter = 0; counter < idx - 1; counter++)
-	{
-		temp = temp->next;
-		if (temp == NULL)
-			return (NULL);
-	}
-	newnode->next = temp->next;
-	temp->next->prev = newnode;
-	temp->next = newnode;
-	newnode->prev = temp;
-
-	return (newnode);
+	if (size < idx)
+		return (NULL);
+	if (size == idx)
+		return (add_dnodeint_end(h, n));
+	actual = *h;
+	while (--idx)
+		actual = actual->next;
+	new = malloc(sizeof(dlistint_t));
+	if (new == NULL)
+		return (NULL);
+	new->n = n;
+	new->next = actual->next;
+	actual->next->prev = new;
+	new->prev = actual;
+	actual->next = new;
+	return (new);
 }
